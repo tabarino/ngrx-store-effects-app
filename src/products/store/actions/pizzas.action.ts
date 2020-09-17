@@ -2,6 +2,7 @@ import { Action } from '@ngrx/store';
 
 import { Pizza } from '../../models/pizza.model';
 
+// All of this was created in this lesson (commit)
 // load pizzas
 export const LOAD_PIZZAS = '[Products] Load Pizzas';
 export const LOAD_PIZZAS_FAIL = '[Products] Load Pizzas Fail';

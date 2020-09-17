@@ -4,9 +4,9 @@ import { Pizza } from '../../models/pizza.model';
 import { PizzasService } from '../../services/pizzas.service';
 
 @Component({
-  selector: 'products',
-  styleUrls: ['products.component.scss'],
-  template: `
+    selector: 'products',
+    styleUrls: ['products.component.scss'],
+    template: `
     <div class="products">
       <div class="products__new">
         <a
@@ -28,13 +28,13 @@ import { PizzasService } from '../../services/pizzas.service';
   `,
 })
 export class ProductsComponent implements OnInit {
-  pizzas: Pizza[];
+    pizzas: Pizza[];
 
-  constructor(private pizzaService: PizzasService) {}
+    constructor(private pizzaService: PizzasService) { }
 
-  ngOnInit() {
-    this.pizzaService.getPizzas().subscribe(pizzas => {
-      this.pizzas = pizzas;
-    });
-  }
+    ngOnInit() {
+        this.pizzaService.getPizzas().subscribe(pizzas => {
+            this.pizzas = pizzas;
+        });
+    }
 }
